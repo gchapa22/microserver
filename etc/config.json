@@ -1,0 +1,66 @@
+{
+
+"ws_servers": [{
+		"host": "54.227.237.5",
+		"port": 8000
+	}
+],
+
+"resource": "/Thingworx/WS",
+
+"appKey": "02c22ee2-6a2b-428b-beff-473527bb2443",
+
+"logger": {
+	"level": "DEBUG",
+	"publish_level": "WARN",
+	"max_file_storage": 2000000,
+	"auto_flush": true,
+	"flush_chunk_size": 16384,
+	"buffer_size": 4096
+},
+
+"http_server": {
+	"host": "localhost",
+	"port": 8000,
+	"ssl": false,
+	"authenticate": false,
+	"content_read_timeout": 20000,
+	"ports_to_try": 10,
+	"max_clients": 15,
+	"use_default_certificate" : true
+},
+
+"fips": {
+	"enabled": false
+},
+
+"ws_connection": {
+	"encryption": "none",
+	"verbose": true, 
+	"binary_mode": false,
+	"msg_timeout": 5000,
+	"ping_rate": 55000,
+	"pingpong_timeout": 10000,
+	"connect_period": 60000,
+	"duty_cycle": 100,
+	"message_idle_time": 50,
+	"max_msg_size": 1048576,
+	"message_chunk_size": 8192,
+	"max_frame_size": 8192,
+	"max_messages": 500,
+	"connect_on_demand": false,
+	"connect_timeout": 10000,
+	"connect_retry_interval": 10000,
+	"max_threads": 4,
+	"max_connect_delay": 0,
+	"socket_read_timeout": 100,
+	"frame_read_timeout": 10000,
+	"ssl_read_timeout": 500,
+	"connect_retries": -1
+},
+
+"certificates": {
+	"validate": false,
+	"allow_self_signed": true
+}
+}
